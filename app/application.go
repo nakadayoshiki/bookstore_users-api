@@ -5,10 +5,10 @@ import (
 )
 
 var(
-    r.ginj.Default()
+    r = gin.Default()
 )
 
 func StartApplication() {
     mapUrls()
-    router.Run(":8080")
+    r.Run(":8080")
 }
